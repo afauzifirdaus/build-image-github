@@ -21,7 +21,7 @@ jobs:
         run: echo ${{ secrets.TOKEN_GITHUB }} | docker login ghcr.io -u fauzifirdaus21 --password-stdin
 
       - name: Tag image
-        run: docker tag imageku ghcr.io/username_github/imageku:latest
+        run: docker tag imageku ghcr.io/fauzifirdaus/imageku:latest
 
       - name: Push Image
-        run: docker push ghcr.io/username_github/imageku:latest
+        run: docker push ghcr.io/fauzifirdaus21/imageku:latest
